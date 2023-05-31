@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leadtracker Chrome Extension</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body class="bg-gray-200">
+    <div id="container">
+      <input
+        type="text"
+        id="input-field"
+        class="rounded-full focus:outline-none pl-4"
+      />
+      <button
+        id="save-btn"
+        class="save-btn btn bg-green-600 text-green-200 px-4 mt-2 rounded-full py-2 border-none focus:outline-none focus:shadow-outline"
+      >
+        SAVE INPUT
+      </button>
+      <button
+        id="tab-btn"
+        class=" tab-btn btn bg-green-600 text-green-200 px-4 mt-2 rounded-full ml-2 py-2 border-none focus:outline-none focus:shadow-outline"
+      >
+        SAVE TAB
+      </button>
+      <button
+        id="delete-btn"
+        class="delete-btn btn bg-red-600 text-red-200 px-4 mt-2 rounded-full ml-2 py-2 border-none focus:outline-none focus:shadow-outline"
+      >
+        DELETE ALL
+      </button>
+      <ul id="ul-el" class="text-gray-700 mt-6"></ul>
+    </div>
+    <h1 id="head"></h1>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
+
